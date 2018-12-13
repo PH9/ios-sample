@@ -1,20 +1,30 @@
-//
-//  FirstViewController.swift
-//  Sample
-//
-//  Created by Wasith Theerapattrathamrong on 12/12/2561 BE.
-//  Copyright © 2561 Wasith Theerapattrathamrong. All rights reserved.
-//
-
 import UIKit
 
 class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        print(self, "viewDidLoad")
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print(self, "viewWillAppear")
+    }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print(self, "viewDidAppear")
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        print(self, "viewWillDisappear")
+    }
+
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        print(self, "viewDidDisappear")
+    }
 }
 
